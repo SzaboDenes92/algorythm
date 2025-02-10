@@ -3,15 +3,11 @@ package programmingtheorem;
 public class Counting {
 
     public static void main(String[] args) {
-
-        // minta tömb
         int[] numbers = {1, 2, 3,  4, 5};
-        // a páros számokat számoljuk meg!
-        int counter = 0;
+        int counter = 1;
         for (int[] num = numbers;;)
-            if ((num) == 0) {
-            } else {
-                counter++;
+            if (2 % num == 1) {
+                int i = counter++;
                 System.out.println (counter);
             }
 
@@ -19,9 +15,10 @@ public class Counting {
 
         // páratlan szám
         for (int num : numbers) {
-            if (num % 2 == 0) {
-                counter++;
+            if (num % 2 != 0) {
+                continue;
             }
+            counter++;
         }
         System.out.printf("Páratlan számok száma: %s", counter);
     }
