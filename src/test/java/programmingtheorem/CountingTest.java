@@ -20,7 +20,7 @@ class CountingTest {
 
     @Test
     @DisplayName("Given epmty array, when calling count odd, then return stb. ")
-    void givenEmptyArray_whenCallingCountOdd_theReturnNoSuchElementException() {
+    public void givenEmptyArray_whenCallingCountOdd_theReturnNoSuchElementException() {
         // Given
         // When
         // Then

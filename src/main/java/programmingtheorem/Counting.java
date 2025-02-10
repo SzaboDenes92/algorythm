@@ -8,14 +8,11 @@ public class Counting {
         int[] numbers = {1, 2, 3,  4, 5};
         // a páros számokat számoljuk meg!
         int counter = 0;
-        var num = numbers;
-        while (true) {
-            if ((num % 2) == 0) {
-            } else {
+        for (int[] num = numbers;;)
+            if ((num % 2) != 0) {
                 counter++;
                 System.out.println (counter);
             }
-        }
 
         System.out.printf("Páros számok száma: %s" , counter);
 
