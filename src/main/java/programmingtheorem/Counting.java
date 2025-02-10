@@ -9,7 +9,8 @@ public class Counting {
         // a páros számokat számoljuk meg!
         int counter = 0;
         for (int[] num = numbers;;)
-            if ((num % 2) != 0) {
+            if ((num) == 0) {
+            } else {
                 counter++;
                 System.out.println (counter);
             }

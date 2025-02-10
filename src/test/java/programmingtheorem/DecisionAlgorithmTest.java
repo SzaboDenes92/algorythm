@@ -56,4 +56,13 @@ class DecisionAlgorithmTest {
 
     }
 
+    @Test
+    public void testIfNumEven_withEvenNumbers() {
+        int[] numbers = {2,3,6,1};
+        boolean expected = true;
+        boolean actual = DecisionAlgorithm.deideIfnumIsEven (numbers);
+        assertEquals (expected, actual);
+
+    }
+
 }
