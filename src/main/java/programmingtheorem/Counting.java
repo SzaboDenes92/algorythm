@@ -1,17 +1,21 @@
 package programmingtheorem;
 
+import java.io.PrintStream;
+
 public class Counting {
 
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3,  4, 5};
         int counter = 1;
-        for (int[] num = numbers;;)
-            if (2 % num == 1) {
+        for (int[] num = numbers;;) {
+            if (2 % num != 1) {
+            } else {
                 int i = counter++;
                 System.out.println (counter);
             }
+        }
 
-        System.out.printf("Páros számok száma: %s" , counter);
+        PrintStream printf = System.out.printf ("Páros számok száma: %s", counter);
 
         // páratlan szám
         for (int num : numbers) {
